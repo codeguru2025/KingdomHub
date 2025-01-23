@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingdomHub - Homepage</title>
+    <!-- Link to Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <style>
+        /* Global Reset */
+        body, h1, p, ul, li, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Overall Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: white; /* White background for header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for better contrast */
+            color: #003366; /* Dark blue for text */
+        }
+
+        .logo-container img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #00579c, #003366); /* Tesla-like gradient */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover effect for menu items */
+        nav a:hover {
+            background: linear-gradient(45deg, #003366, #00579c); /* Hover gradient */
+            color: #fff;
+            transform: scale(1.1); /* Slight zoom effect */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        /* Main Section */
+        .main-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #003366;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .main-section h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Stylish Buttons */
+        .buttons-container {
+            margin-top: 20px;
+        }
+
+        .buttons-container button {
+            background-color: #00579c; /* Light blue */
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px; /* Rounded button edges */
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .buttons-container button:hover {
+            background-color: #00457d; /* Darker blue */
+            transform: translateY(-2px); /* Slight upward movement */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 50px;
+        }
+
+        .social-icons a {
+            margin: 0 20px;
+            display: inline-block;
+        }
+
+        .social-icons i {
+            font-size: 40px;
+            transition: transform 0.3s; /* Smooth transform effect */
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            /* Stack the menu items vertically for small screens */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .buttons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons-container button {
+                margin: 10px 0;
+            }
+
+            .main-section h1 {
+                font-size: 28px;
+            }
+
+            .main-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo and Navigation -->
+        <header>
+            <div class="logo-container">
+                <img src="Assets/Images/HD.jpg" alt="KingdomHub Logo">
+            </div>
+            <nav>
+                <a href="#" onclick="navigateTo('Sales%20and%20Marketing/Sales%20and%20Marketing%20Update')">Sales & Marketing</a>
+                <a href="#" onclick="navigateTo('Finance/finance')">Finance</a>
+                <a href="#" onclick="navigateTo('Funerals/funerals')">Funerals</a>
+                <a href="#" onclick="navigateTo('Claims/claims')">Claims</a>
+                <a href="#" onclick="navigateTo('Fleet/fleet')">Fleet</a>
+                <a href="#" onclick="navigateTo('Operations/operations.html')">Operations</a> <!-- Moved Operations next to Fleet -->
+                <a href="#" onclick="navigateTo('Human%20Resource/human_resource')">HR</a>
+                <a href="#" onclick="window.location.href='file:///C:/Users/Kingdom%20Blue/OneDrive/Desktop/KingdomBlue/CheckMate/Departments/Business%20Admin/Business-Admin.html'">Business Admin</a>
+                <a href="#" onclick="navigateTo('Support/support')">Support</a>
+                <a href="#" onclick="navigateTo('Underwriting/underwriting')">Underwriting</a>
+                <!-- Added buttons for Business to Business and Group Schemes -->
+                <a href="file:///C:/Users/Kingdom%20Blue/OneDrive/Desktop/KingdomBlue/CheckMate/Departments/Sales%20and%20Marketing/Business%20to%20Business/BusinesstoBusiness.html">Business to Business</a>
+                <a href="file:///C:/Users/Kingdom%20Blue/OneDrive/Desktop/KingdomBlue/CheckMate/Departments/Sales%20and%20Marketing/Group%20Schemes/GroupSchemes.html">Group Schemes</a>
+            </nav>
+        </header>
+
+        <!-- Background Video -->
+        <video class="video-background" autoplay muted loop>
+            <source src="Assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Main Content Section -->
+        <div class="main-section">
+            <h1>Welcome to CheckMate</h1>
+            <p>Select the department to access its forms:</p>
+
+            <div class="buttons-container">
+                <button onclick="goToHome()">Home</button>
+                <button onclick="goBack()">Back</button>
+                <button onclick="window.location.href='https://wa.me/263712171267';">Contact Support</button>
+                <button onclick="window.location.href='file:///C:/Users/Kingdom%20Blue/OneDrive/Desktop/KingdomBlue/KingdomBlue%20New%20Client%20Portal/Index.html';">Open Leads Page</button>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 CheckMate. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
